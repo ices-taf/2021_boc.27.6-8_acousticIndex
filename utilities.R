@@ -1,5 +1,5 @@
 # Install and load R packages
-ipak <- function(pkg) {
+ipkg <- function(pkg) {
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
   if (length(new.pkg)) 
     install.packages(new.pkg, dependencies = TRUE)
